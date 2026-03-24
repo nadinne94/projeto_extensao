@@ -7,66 +7,72 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f5f7fa;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6fb;
       color: #333;
     }
 
     header {
-      background: #2d6cdf;
+      background: linear-gradient(135deg, #2d6cdf, #6c9cff);
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 60px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.2em;
+      font-size: 2.5em;
     }
 
     header p {
       margin-top: 10px;
-      font-size: 1.1em;
+      font-size: 1.2em;
+      opacity: 0.9;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 20px;
+    }
+
+    .intro {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: -40px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
 
     .modules {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     .card {
       background: white;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
       transition: 0.3s;
+      text-align: center;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      margin-top: 0;
+      transform: translateY(-6px);
     }
 
     .btn {
       display: inline-block;
       margin-top: 15px;
-      padding: 10px 15px;
+      padding: 10px 18px;
       background: #2d6cdf;
       color: white;
-      text-decoration: none;
       border-radius: 8px;
+      text-decoration: none;
     }
 
     section {
@@ -86,7 +92,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 0.9em;
       color: #777;
     }
@@ -97,103 +103,64 @@
 
 <header>
   <h1>Informática para Todos</h1>
-  <p>Capacitação em Letramento Digital e Segurança da Informação</p>
+  <p>Letramento Digital e Segurança da Informação</p>
 </header>
 
 <div class="container">
 
-  <h2>📚 Módulos</h2>
-
-  <div class="modules">
-    <div class="card">
-      <h3>Uso consciente da internet</h3>
-      <a href="#mod1" class="btn">Acessar</a>
-    </div>
-
-    <div class="card">
-      <h3>Inteligência Artificial</h3>
-      <a href="#mod2" class="btn">Acessar</a>
-    </div>
-
-    <div class="card">
-      <h3>Verificação de fontes</h3>
-      <a href="#mod3" class="btn">Acessar</a>
-    </div>
-
-    <div class="card">
-      <h3>Segurança digital</h3>
-      <a href="#mod4" class="btn">Acessar</a>
-    </div>
-
-    <div class="card">
-      <h3>Senhas seguras</h3>
-      <a href="#mod5" class="btn">Acessar</a>
-    </div>
-
-    <div class="card">
-      <h3>Redes sociais</h3>
-      <a href="#mod6" class="btn">Acessar</a>
-    </div>
+  <!-- INTRODUÇÃO -->
+  <div class="intro">
+    <h2>Introdução</h2>
+    <p>
+      Esta capacitação tem como objetivo desenvolver habilidades para o uso seguro,
+      consciente e crítico da internet, abordando temas como Inteligência Artificial,
+      segurança digital e identificação de informações confiáveis.
+    </p>
+    <iframe src="https://www.youtube.com/embed/7mVP861BTag"></iframe>
   </div>
 
-  <!-- MÓDULO 1 -->
-  <section id="mod1">
-    <h2>Uso consciente da internet</h2>
-    <p>
-      A internet faz parte do nosso cotidiano e está presente em atividades como estudo, trabalho e comunicação.
-      O uso consciente envolve refletir antes de compartilhar conteúdos, respeitar outras pessoas e evitar excessos.
-    </p>
-    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"></iframe>
+  <!-- MÓDULOS -->
+  <h2 style="margin-top:40px;">Módulos</h2>
+
+  <div class="modules">
+    <div class="card"><h3>Módulo 1</h3><a href="#m1" class="btn">Acessar</a></div>
+    <div class="card"><h3>Módulo 2</h3><a href="#m2" class="btn">Acessar</a></div>
+    <div class="card"><h3>Módulo 3</h3><a href="#m3" class="btn">Acessar</a></div>
+    <div class="card"><h3>Módulo 4</h3><a href="#m4" class="btn">Acessar</a></div>
+    <div class="card"><h3>Módulo 5</h3><a href="#m5" class="btn">Acessar</a></div>
+    <div class="card"><h3>Módulo 6</h3><a href="#m6" class="btn">Acessar</a></div>
+  </div>
+
+  <!-- MÓDULOS COM VÍDEOS -->
+
+  <section id="m1">
+    <h2>Módulo 1 — Uso consciente da internet</h2>
+    <iframe src="https://www.youtube.com/embed/aX55ZIKauP8"></iframe>
   </section>
 
-  <!-- MÓDULO 2 -->
-  <section id="mod2">
-    <h2>Noções básicas de Inteligência Artificial</h2>
-    <p>
-      A Inteligência Artificial está presente em diversas tecnologias do dia a dia.
-      Ela utiliza dados para gerar respostas e recomendações, mas pode cometer erros.
-    </p>
-    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"></iframe>
+  <section id="m2">
+    <h2>Módulo 2 — Inteligência Artificial</h2>
+    <iframe src="https://www.youtube.com/embed/1vaZxvzQ8aA"></iframe>
   </section>
 
-  <!-- MÓDULO 3 -->
-  <section id="mod3">
-    <h2>Verificação de fontes</h2>
-    <p>
-      Nem toda informação na internet é confiável.
-      Verificar a fonte, comparar informações e analisar a data são passos essenciais.
-    </p>
-    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"></iframe>
+  <section id="m3">
+    <h2>Módulo 3 — Verificação de fontes</h2>
+    <iframe src="https://www.youtube.com/embed/OdNQz8tXong"></iframe>
   </section>
 
-  <!-- MÓDULO 4 -->
-  <section id="mod4">
-    <h2>Segurança digital</h2>
-    <p>
-      A segurança digital protege seus dados contra golpes e invasões.
-      Evite clicar em links suspeitos e mantenha seus dispositivos atualizados.
-    </p>
-    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"></iframe>
+  <section id="m4">
+    <h2>Módulo 4 — Segurança digital</h2>
+    <iframe src="https://www.youtube.com/embed/oAeQ8-dL7TY"></iframe>
   </section>
 
-  <!-- MÓDULO 5 -->
-  <section id="mod5">
-    <h2>Criação de senhas seguras</h2>
-    <p>
-      Senhas fortes são essenciais para proteger suas contas.
-      Utilize combinações de letras, números e símbolos.
-    </p>
-    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"></iframe>
+  <section id="m5">
+    <h2>Módulo 5 — Senhas seguras</h2>
+    <iframe src="https://www.youtube.com/embed/3KugcLM_NLw"></iframe>
   </section>
 
-  <!-- MÓDULO 6 -->
-  <section id="mod6">
-    <h2>Boas práticas nas redes sociais</h2>
-    <p>
-      Evite compartilhar informações pessoais e revise suas configurações de privacidade.
-      Use as redes sociais com responsabilidade.
-    </p>
-    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI"></iframe>
+  <section id="m6">
+    <h2>Módulo 6 — Redes sociais</h2>
+    <iframe src="https://www.youtube.com/embed/IvP6TQMDNAo"></iframe>
   </section>
 
 </div>
